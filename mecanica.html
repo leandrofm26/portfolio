@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mecânica, trabalho (W), força (F), aceleração</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <p>Vamos entender fórmulas de física que falam sobre
+        <b>trabalho (W), força (F), aceleração (a) e energia cinética (K)</b>.
+        Vamos destrinchar tudo passo a passo, bem simples, com exemplos do dia a dia 💡
+    </p><br>
+
+    <p>
+    <table>
+        <h2>Imagine um carro de 1.000 kg (1 tonelada) que parte do repouso (v₀ = 0) e chega a v = 20 m/s (72 km/h)
+            depois de percorrer 100 metros.</h2>
+        <div class="div1">
+
+
+            <p>Aceleração (m/s²)</p>
+            <input id="m/s2" type="number">
+            <p>V<sub>0</sub> Velocidade inicial (m/s)</p>
+            <input id="v0" type="number">
+            <p>Velocidade final (m/s)</p>
+            <input id="vf" type="number">
+
+
+            <p>Δx Distância percorrida metros (m)</p>
+            <input id="Δx" type="number">
+            <p> Massa do corpo (KG)</p>
+            <input id="m" type="number">
+            <p> Trabalho realizado Joule (J)</p>
+            <input type="number">
+            <p>Energia cinética Joule (J)</p>
+            <input type="number">
+            <p>Força — Newton (N)</p>
+            <input id="f" type="number">
+        </div>
+
+        <div class="formulas">Formulas
+
+
+            <ul>
+                <li>Trabalho (W)</li>
+                <li>Força (F)</li>
+                <li>Aceleração (a)</li>
+                <li>Energia cinética (K)</li>
+                <br><br><br>
+
+
+                <li> v²= v²<sub>0</sub>+2aΔx</li>
+                <li>F = m . a</li>
+                <li>a = (v - v₀) / Δx</li>
+                <li>W = F . Δx</li>
+                <li>K = ½ . m . v²</li>
+            </ul>
+
+            <p id="Resultado">
+
+            </p>
+
+            <button id="btn" onclick="Torricelli()">Calcular velocida, aceleraão e Distância</button>
+            <button id="força" onclick="fma()">Calcular Força</button>
+            <button id="ft" onclick="Trabalho()">Força de Trabalho</button>
+
+        </div>
+
+
+        <script src="formulas.js"></script>
+
+</body>
+
+</html>
