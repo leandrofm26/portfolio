@@ -3,26 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Leandro</title>
+    <title>Treino de Divs</title>
 
 </head>
-
-<link rel="stylesheet" href="style.css">
-<script src="formulas.js"></script>
+<link rel="stylesheet" href="style.css" />
 
 <body>
-    <header>Portfólio de Leandro</header>
+    <div class="container">
+        <div id="problema" class="box problema">🚗 Um carro de 900 kg percorre 50 m com aceleração constante de 3 m/s².
+            Calcule a
+            velocidade final e o tempo gasto.
 
-    <nav>
-        <a href="mecanica.html" target="conteudo">Mecânica</a>
-        <a href="fisica.html" target="conteudo">Física</a>
-        <a href="eletrica.html" target="conteudo">Elétrica</a>
-    </nav>
+            <div class="navegar"> Navegar</div>
 
-    <main>
-        <iframe name="conteudo" src="mecanica.html"></iframe>
-    </main>
+        </div>
+
+        <div class="bottom">
+
+
+            <div class="box formula">
+                <ul>
+                    <li id="formula1"></li>
+                    <li id="formula2"></li>
+                    <li id="formula3"></li>
+                    <li id="formula4"></li>
+                    <li id="formula5"></li>
+                </ul>
+            </div>
+            <div id="solucao" class="box solucao">
+
+
+                <button onclick="teste()">F=MA</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="btn">
+            <button onclick="TrocarProblema()">Novo Problema</button>
+            <button onclick="carregarValores()">Valores</button>
+
+
+
+        </div>
+        /* JavaScript */
+        <script src="formulas.js"></script>
+        <script src="funcaotrocar.js"></script>
 </body>
 
 </html>
